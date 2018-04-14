@@ -8,23 +8,22 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/edit_PlayList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="36dp" />
+        android:text="4hOKQuZbraPDIfaGbM3lKI"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="156dp" />
+
+    <Button
+        android:id="@+id/btn_Reproducir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reproducir"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="219dp" />
 
 </android.support.constraint.ConstraintLayout>

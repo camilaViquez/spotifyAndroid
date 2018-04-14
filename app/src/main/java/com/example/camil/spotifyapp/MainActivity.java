@@ -148,6 +148,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 
 import com.spotify.sdk.android.authentication.AuthenticationClient;
 import com.spotify.sdk.android.authentication.AuthenticationRequest;
@@ -234,8 +237,19 @@ public class MainActivity extends Activity implements
     @Override
     public void onLoggedIn() {
         Log.d("MainActivity", "User logged in");
+        Button btnReproducir = (Button) findViewById(R.id.btn_Reproducir);
+        final EditText editPlayList = (EditText)findViewById(R.id.edit_PlayList);
+        String str ="";
+        btnReproducir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String str = editPlayList.getText().toString();
+                mPlayer.playUri(null, "spotify:playlist:"+ str, 0, 0);
+            }
+        });
 
-        mPlayer.playUri(null, "spotify:playlist:4hOKQuZbraPDIfaGbM3lKI", 0, 0);
+        //mPlayer.playUri(null, "spotify:playlist:4hOKQuZbraPDIfaGbM3lKI", 0, 0);
+
     }
 
     @Override
