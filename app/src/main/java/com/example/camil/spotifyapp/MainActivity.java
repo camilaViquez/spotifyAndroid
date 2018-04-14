@@ -164,7 +164,7 @@ public class MainActivity extends Activity implements
         SpotifyPlayer.NotificationCallback, ConnectionStateCallback
 {
     private static final String CLIENT_ID = "d84a7a7a14b74889a89325fbadcc0a69";
-    private static final String REDIRECT_URI = "myapp/callback/";
+    private static final String REDIRECT_URI = "spotifyapp://callback";
     private Player mPlayer;
     private static final int REQUEST_CODE = 1337;
 
