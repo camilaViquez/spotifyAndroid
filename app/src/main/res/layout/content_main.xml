@@ -8,22 +8,57 @@
     tools:context=".MainActivity"
     tools:showIn="@layout/activity_main">
 
-    <EditText
-        android:id="@+id/edit_PlayList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="4hOKQuZbraPDIfaGbM3lKI"
-        tools:layout_editor_absoluteX="65dp"
-        tools:layout_editor_absoluteY="156dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="72dp">
 
-    <Button
-        android:id="@+id/btn_Reproducir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Reproducir"
-        tools:layout_editor_absoluteX="130dp"
-        tools:layout_editor_absoluteY="219dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="95dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit_PlayList"
+                android:layout_width="235dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:text="37i9dQZF1DWZeXxACCcUmL"
+                tools:layout_editor_absoluteX="65dp"
+                tools:layout_editor_absoluteY="156dp" />
+
+            <Button
+                android:id="@+id/btn_Reproducir"
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reproducir"
+                tools:layout_editor_absoluteX="130dp"
+                tools:layout_editor_absoluteY="219dp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:text="Intriduzca el URI de un playlist. Soul.House.relax: 37i9dQZF1DWZeXxACCcUmL .Tropical Hits: 37i9dQZF1DWYey22ryYM8U. Amor Amor: 37i9dQZF1DWUoGbRYcteyC. FrienDeSemana:37i9dQZF1DX4TNDxNzIjRm.Cena Con Jazz: 37i9dQZF1DX4YnmTbpvHLN.Lava Lamp: 37i9dQZF1DWWtqHeytOZ8f. Latin Pop VIP: spotify:user:spotify:playlist:37i9dQZF1DX1QnNyJOBQBv. Ambiente RnB: 7i9dQZF1DX9rMmcnRVZ8W " />
+
+            <FrameLayout
+                android:layout_width="195dp"
+                android:layout_height="57dp">
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
